@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Heebo';
+  src: local('Heebo-VariableFont_wght'),
+  url('Heebo-VariableFont_wght.ttf') format('ttf support variations'),
+  url('Heebo-VariableFont_wght.ttf') format('ttf-variations');
+  font-weight: 400 800;
+  font-display: swap;
+}
