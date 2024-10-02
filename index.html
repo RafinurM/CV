@@ -1,99 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Curculum Vitae RMursalimov</title>\
-  <link rel="stylesheet" href="./style/variables.css">
-  <link rel="stylesheet" href="./fonts/fonts.css">
-  <link rel="stylesheet" href="./style/globals.css">
-  <link rel="stylesheet" href="./style/style.css">
-  <link rel="stylesheet" href="./style/cards.css">
-  <link rel="stylesheet" href="./style/instrumentary.css">
-  <link rel="stylesheet" href="./style/animation.css">
-</head>
-<body class="page">
-  <header class="header" id="up">
-    <h1 class="title"><a>Rafinur Mursalimov</a></h1>
-    <p class="title_description">Frontend developer</p>
-  </header>
-  <main class="content">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curculum Vitae RMursalimov</title>
+    <link rel="stylesheet" href="./style/variables.css" />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./style/globals.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/cards.css" />
+    <link rel="stylesheet" href="./style/instrumentary.css" />
+    <link rel="stylesheet" href="./style/animation.css" />
+    <link rel="icon" href="./images/svg/favicon.ico" sizes="any" />
+    <link rel="icon" href="./images/svg/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/svg/favicon.png" />
+  </head>
 
+  <body class="page">
+    <header class="header" id="up">
+      <h1 class="title"><a href="/">Rafinur Mursalimov</a></h1>
+      <p class="title_description">Frontend developer</p>
+    </header>
+    <main class="content">
+      <article class="card_container">
+        <div class="card about">
+          <h2 class="card_title">Обо мне</h2>
+          <div class="card_content">
+            <img class="card_image" src="./images/RM.JPG" alt="Фотография" />
+            <p class="card_description">
+              Родился в 1992г. Инженер, художник. Предпочитаю создавать и
+              работать с интерфейсами. В детстве самостоятельно изучал Basic, в
+              школе изучал основы С++, в университете изучал Assembler, Turbo
+              Pascal, различные ПО для программирования микроконтроллеров.
+              Дипломная работа выполнена в системе CODESYS v3. Самостоятельно
+              изучаю MySQL, PHP, знаком с компьютерными сетями, протоколами,
+              методами передачи данных. Из увлечений - настольные игры,
+              компьютерные игры, пишу масляные и цифровые картины, активный
+              образ жизни. Участвал в крупных международных соревнованиях в
+              качестве технической поддержки IT (волонтёром) на мероприятиях
+              FINA, FIS, SOCHI2014, IJF.
+            </p>
+          </div>
+        </div>
+        <ul class="hint_list">
+          <li class="hint_item education filter_contrast">
+            <span class="hint_item-text">Образование высшее</span>
+          </li>
+          <li class="hint_item english">
+            <span class="hint_item-text">Английский язык</span>
+          </li>
+          <li class="hint_item art">
+            <span class="hint_item-text">Художник</span>
+          </li>
+          <li class="hint_item chess">
+            <span class="hint_item-text">Шахматы</span>
+          </li>
+          <li class="hint_item volunteer">
+            <span class="hint_item-text">Волонтёр</span>
+          </li>
+        </ul>
+      </article>
 
-    <article class="card_container">
-      <div class="card about">
-        <h2 class="card_title">Обо мне</h2>
-        <img class="card_image" src="./images/RM.JPG" alt="Фотография">
-        <p class="card_description">Инженер, художниик. Люблю программировать и работать с интерфейсами.</p>
-      </div>
-      <ul class="hint_list">
-        <li class="hint_item">Образование высшее техническое</li>
-        <li class="hint_item">Английский язык</li>
-        <li class="hint_item">Художник</li>
-        <li class="hint_item">Шахматы</li>
-        <li class="hint_item">Волонтёр</li>
-      </ul>
-    </article>
-
-
-
-    <article class="card carrier">
-      <h2 class="card_title">Карьера и обучение</h2>
-      <ul class="carrier_list">
-        <li class="carrier_list-item"> <p class="carrier_list-item-title">Schlumberger: Инженер-Электроник</p> <p class="carrier_list-item-description">Пришёл в компанию в 2019 году в качестве слесаря КИПиА на локацию Пыть-Ях. После получения G08 сменил локацию на Ванкор, где исполняю обязанности Инженер-Электроника, BSO и CTA instructor.</p></li>
-        <li class="carrier_list-item"><p class="carrier_list-item-title">Нетология: Javascript-разработчик</p></li>
-        <li class="carrier_list-item"><p class="carrier_list-item-title">Нетология: React-разработчик</p></li>
-        <li class="carrier_list-item"><p class="carrier_list-item-title">Яндекс Практикум: Frontend-developer</p></li>
-      </ul>
-    </article>
-    <article class="card skills">
-      <h2 class="card_title">Интрументарий</h2>
-      <ul class="card_list">
-        <li class="card_item">
-          <img src="./images/icons/html5_icon.png" alt="html5" class="card_item-image">
-        </li>
-        <li class="card_item">
-          <img src="./images/icons/css3_icon.png" alt="css3" class="card-item-image">
-        </li>
-        <li class="card_item">
-          <img src="./images/icons/js_icon.png" alt="javascript" class="card_item-image">
-        </li>
-        <li class="card_item">
-          <img src="./images/icons/git_icon.png" alt="git" class="card_item-image">
-        </li>
-        <li class="card_item">
-          <img src="./images/icons/gulp_icon.png" alt="gulp" class="card_item-image" width="48px">
-        </li>
-        <li class="card_item">
-          <img src="./images/icons/react_icon.png" alt="react" class="card_item-image">
-        </li>
-        <li class="card_item">
-          <img src="./images/icons/vs_icon.png" alt="visual studio code" class="card_item-image">
-        </li>
-        <li class="card_item">
-          <img src="./images/icons/sass_icon.png" alt="sass" class="card_item-image">
-        </li>
-      </ul>
-    </article>
-    <article class="card expirience">
-      <h2 class="expirience">Опыт</h2>
-    </article>
-  </main>
-  <footer class="footer">
-    <address class="address-container">
-      <a href="tel:+79198671711">+7 919 867 17 11</a><br />
-      <a href="mailto:rmursalimov2@slb.com">rmursalimov2@slb.com</a><br />
-      <span class="address-text"
-        >Vankor</span
-      >
-    </address>
-    <nav>
-      <ul class="footer_menu-list">
-        <li class="footer_menu-item"><a href="#up" class="up">Наверх</a></li>
-        <li class="footer_menu-item"><span class="footer_info">2024 by RM</span></li>
-      </ul>
-    </nav>
-  </footer>
-  <script src="./ui/script.js"></script>
-</body>
+      <article class="card carrier">
+        <h2 class="card_title">Карьера и обучение</h2>
+        <ul class="carrier_list">
+          <li class="carrier_list-item carrier_type-work">
+            <h3 class="carrier_list-item-title">
+              Schlumberger: Инженер-Электроник
+            </h3>
+            <span class="carrier_list-item-description">
+              Пришёл в компанию в 2019 году в качестве слесаря КИПиА на локацию
+              Пыть-Ях. Через год сменил локацию на Ванкор, где
+              исполняю обязанности Инженер-Электроника, BSO и CTA instructor.
+            </span>
+          </li>
+          <li class="carrier_list-item carrier_type-education">
+            <h3 class="carrier_list-item-title">
+              Нетология: Программист на JavaScript
+            </h3>
+            <span class="carrier_list-item-description">
+              Обучение на онлайн платформе с 2021 по 2022 года.
+            </span>
+          </li>
+          <li class="carrier_list-item carrier_type-education">
+            <h3 class="carrier_list-item-title">
+              Нетология: React для JS-разработчиков
+            </h3>
+            <span class="carrier_list-item-description">
+              Продолжение обучения с 2022 по 2023 года.
+            </span>
+          </li>
+          <li class="carrier_list-item carrier_type-education">
+            <h3 class="carrier_list-item-title">
+              Яндекс Практикум: Frontend-developer
+            </h3>
+            <span class="carrier_list-item-description">
+              Текущее место обучения. Продолжаем совершенствовать навыки.
+            </span>
+          </li>
+        </ul>
+      </article>
+      <article class="card skills">
+        <h2 class="card_title">Интрументарий</h2>
+        <ul class="card_list">
+          <li class="card_item">
+            <img
+              src="./images/icons/html5_icon.png"
+              alt="html5"
+              class="card_item-image"
+            />
+          </li>
+          <li class="card_item">
+            <img
+              src="./images/icons/css3_icon.png"
+              alt="css3"
+              class="card-item-image"
+            />
+          </li>
+          <li class="card_item">
+            <img
+              src="./images/icons/js_icon.png"
+              alt="javascript"
+              class="card_item-image"
+            />
+          </li>
+          <li class="card_item">
+            <img
+              src="./images/icons/git_icon.png"
+              alt="git"
+              class="card_item-image"
+            />
+          </li>
+          <li class="card_item">
+            <img
+              src="./images/icons/gulp_icon.png"
+              alt="gulp"
+              class="card_item-image"
+              width="48px"
+            />
+          </li>
+          <li class="card_item">
+            <img
+              src="./images/icons/react_icon.png"
+              alt="react"
+              class="card_item-image"
+            />
+          </li>
+          <li class="card_item">
+            <img
+              src="./images/icons/vs_icon.png"
+              alt="visual studio code"
+              class="card_item-image"
+            />
+          </li>
+          <li class="card_item">
+            <img
+              src="./images/icons/sass_icon.png"
+              alt="sass"
+              class="card_item-image"
+            />
+          </li>
+        </ul>
+      </article>
+      <article class="card expirience">
+        <h2 class="card_title expirience">Опыт</h2>
+      </article>
+    </main>
+    <footer class="footer">
+      <address class="address-container">
+        <a href="tel:+79198671711">+7 919 867 17 11</a><br />
+        <a href="mailto:rmursalimov2@slb.com">rmursalimov2@slb.com</a><br />
+        <a
+          class="address-text"
+          href="https://github.com/RafinurM"
+          target="_blank"
+          >GitHub</a
+        >
+      </address>
+      <nav>
+        <ul class="footer_menu-list">
+          <li class="footer_menu-item"><a href="#up" class="up">Наверх</a></li>
+          <li class="footer_menu-item">
+            <span class="footer_info">2024 by RM</span>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="./ui/script.js"></script>
+  </body>
 </html>

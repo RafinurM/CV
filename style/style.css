@@ -1,58 +1,64 @@
 .page {
   display: flex;
   flex-direction: column;
-  margin: 100px 100px 0;
-  background-color: var(--accentColor);
-  background-image: url('../images/background.jpeg');
-  background-blend-mode: multiply;
-  background-size: cover;
+  margin: 140px auto 0;
   font-family: var(--accentFont), sans-serif;
+  background-color: var(--accentColor);
+  background-image: url("../images/background.jpeg");
+  background-size: cover;
+  background-blend-mode: multiply;
+  max-inline-size: 1200px;
 }
-
 
 .header {
   margin: 20px auto;
   border: 2px solid var(--accentColor);
-  padding: 10px 70px;
-  mix-blend-mode: difference;
+  padding: 10px 100px;
   color: var(--accentColor);
-  cursor: pointer;
-  transition: background-color .3s linear;
   background-color: #141d3bdf;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  mix-blend-mode: difference;
 }
 
 .header:hover {
   border: 2px solid #fff;
+  background-color: #142459df;
 }
 
 .title {
   font-size: 32px;
-  animation: colorChange 1s 1.2s ease-in forwards;
+  animation: colorChange 1s 5s ease-in forwards;
+}
+
+.title>a {
+  text-decoration: none;
 }
 
 .title::after {
-  content: '';
-  border: 2px solid var(--accentColor);
+  content: "";
+  position: absolute;
   display: inline-block;
   border-radius: 50%;
-  inline-size: 10px;
-  block-size: 10px;
-  animation: titleAnimation 1.6s 0.25s ease-in forwards;
-  position: absolute;
+  background-color: #fff;
   transform: rotateZ(0deg);
   transform-origin: 300%;
-  background-color: #fff;
+  animation: titleAnimation 1.8s 0.3s ease-in forwards,
+    titleEffects 1.9s 1.8s linear, endEffect 2s 4s linear forwards;
+  inline-size: 10px;
+  block-size: 10px;
+  scale: 0.1;
 }
 
 .title_description {
   font-size: 22px;
-  animation: colorChange 1s 1.2s ease-in forwards;
+  animation: colorChange 1s 5.2s ease-in forwards;
 }
 
 .content {
   display: grid;
   gap: 50px;
-  margin-bottom: 50px;
+  margin: 50px 20px;
 }
 
 .card_container {
@@ -65,8 +71,8 @@
   align-items: center;
   width: 100%;
   height: 20vh;
-  background-color: var(--backgroundColor);
   border-block-start: 1px solid #ffffff;
+  background-color: var(--backgroundColor);
 }
 
 .address-container {
