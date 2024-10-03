@@ -1,4 +1,9 @@
-/* Инструментарий */
+/* INSTRUMENTARY CARD */
+
+.skills {
+  justify-self: flex-end;
+  background-color: #3b76a6;
+}
 
 .card_list {
   display: flex;
@@ -11,9 +16,33 @@
   transition: all 0.3s linear;
 }
 
+.card_item-link:focus {
+  outline: none;
+}
+
+.card_item-link:focus-visible {
+ 
+  outline: 1px solid #fff;
+}
+
+
+
+.card_item-image-description {
+  color: #3b76a6;
+  font-weight: 700;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.3s linear;
+}
+
 .card_item:hover {
   border: 2px solid #fff;
   box-shadow: 3px 3px 0px 2px rgba(0, 0, 0, 1);
   -webkit-box-shadow: 3px 3px 0px 2px rgba(0, 0, 0, 1);
   -moz-box-shadow: 3px 3px 0px 2px rgba(0, 0, 0, 1);
+}
+
+.card_item:hover>figure>.card_item-image-description {
+  color: #fff;
 }

@@ -7,7 +7,7 @@
 }
 
 .about:hover {
-  background-color: #4688bf;
+  background-color: #479c76; 
   box-shadow: 9px 9px 0px 3px rgba(0, 0, 0, 1);
   -webkit-box-shadow: 9px 9px 0px 3px rgba(0, 0, 0, 1);
   -moz-box-shadow: 9px 9px 0px 3px rgba(0, 0, 0, 1);
@@ -172,12 +172,6 @@
 
 .active_point {}
 
-/* INSTRUMENTARY CARD */
-
-.skills {
-  justify-self: flex-end;
-  background-color: #3b76a6;
-}
 
 /* EXPIRIENCE CARD */
 
