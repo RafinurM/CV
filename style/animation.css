@@ -102,3 +102,9 @@
     transform: rotateZ(-50deg);
   }
 }
+
+@keyframes flicker {
+  from {
+    color:; 
+  }
+}

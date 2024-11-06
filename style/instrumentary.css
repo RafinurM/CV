@@ -21,11 +21,8 @@
 }
 
 .card_item-link:focus-visible {
- 
   outline: 1px solid #fff;
 }
-
-
 
 .card_item-image-description {
   color: #3b76a6;

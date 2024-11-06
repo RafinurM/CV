@@ -6,11 +6,11 @@
   inline-size: 80%;
 }
 
-.about:hover {
-  background-color: #479c76; 
+.about:hover { 
   box-shadow: 9px 9px 0px 3px rgba(0, 0, 0, 1);
   -webkit-box-shadow: 9px 9px 0px 3px rgba(0, 0, 0, 1);
   -moz-box-shadow: 9px 9px 0px 3px rgba(0, 0, 0, 1);
+  background-color: #479c76;
 }
 
 .card_content {
@@ -140,9 +140,9 @@
 .carrier_list-item {
   padding: 5px;
   color: #fff;
+  text-align: right;
   list-style-position: unset;
   transition: all 0.3s linear;
-  text-align: right;
 }
 
 .carrier_type-education {
@@ -166,15 +166,5 @@
   transition: all 0.5s linear;
 }
 
-.active_description {
-
-}
-
-.active_point {}
 
 
-/* EXPIRIENCE CARD */
-
-.expirience {
-  align-self: flex-end;
-}

@@ -1,0 +1,30 @@
+/* EXPIRIENCE CARD */
+
+.expirience {
+  align-self: flex-end;
+  border-right: 0;
+  border-bottom: 0;
+}
+
+.project_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  width: 410px;
+  height: 670px;
+  /* border: 1px solid #fff; */
+  margin: 10px 30px;
+  overflow: hidden;
+}
+
+.project_corrector {
+  width: 410px;
+  overflow: hidden;
+}
+
+.project::-webkit-scrollbar {
+  width:0;
+}
