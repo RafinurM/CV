@@ -1,20 +1,24 @@
 /* ABOUT CARD */
 
 .about {
+  padding: 10px;
   color: var(--alternateColor);
   transition: all 0.3s linear;
   inline-size: 80%;
+  border: 2px solid transparent;
 }
 
 .about:hover { 
   box-shadow: 9px 9px 0px 3px rgba(0, 0, 0, 1);
   -webkit-box-shadow: 9px 9px 0px 3px rgba(0, 0, 0, 1);
   -moz-box-shadow: 9px 9px 0px 3px rgba(0, 0, 0, 1);
-  background-color: #479c76;
+  background-color: var(--accentColor);
+  border: 2px solid #fff;
 }
 
 .card_content {
   display: flex;
+  border: 2px solid var(--alternateColor);
 }
 
 .card_description {
@@ -34,7 +38,7 @@
   -moz-box-shadow: 5px 5px 0px 3px rgba(0, 0, 0, 1);
   background-color: var(--accentColor);
   cursor: pointer;
-  inline-size: 100%;
+  width: 100%;
 }
 
 .card_image {
@@ -45,8 +49,7 @@
 
 .card_title {
   margin-block-end: 10px;
-  color: var(--accentColor);
-  animation: colorChange 1s 5.6s ease-in forwards;
+  color: #fff;
 }
 
 .hint_list {
