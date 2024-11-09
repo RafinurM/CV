@@ -31,20 +31,31 @@
   inline-size: 0;
 }
 
+
+.button_container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .button {
   /* position: absolute; */
-  inline-size: 100%;
+  inline-size: 50px;
   block-size: 50px;
   border: none;
-  background-color: var(--accentColor);
-  /* background-image: url(../images/projects/free-icon-arrow-right-2040514.svg); */
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
   color: #fff;
   cursor: pointer;
   font-size: 26px;
 }
 
-.button:hover {
-  background-color: var(--alternateColor);
+.prev {
+  background-image: url('../images/projects/prev.svg');
+}
+
+.next {
+  background-image: url('../images/projects/next.svg');
 }
 
 .project_element-link {
