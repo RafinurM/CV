@@ -14,6 +14,7 @@
   border: 2px solid transparent;
   padding: 8px;
   transition: all 0.3s linear;
+  text-align: center;
 }
 
 .card_item-link:focus {
@@ -24,6 +25,10 @@
   outline: 1px solid #fff;
 }
 
+.card_item-image {
+  inline-size: 48px;
+  block-size: 48px;
+}
 .card_item-image-description {
   color: #3b76a6;
   font-weight: 700;
