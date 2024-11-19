@@ -31,11 +31,12 @@
   inline-size: 0;
 }
 
-.button_container {
+.cles {
   display: flex;
   justify-content: space-between;
-  inline-size: 100%;
-  z-index: 20;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
 .button {
@@ -52,15 +53,14 @@
 
 .button:focus {
   outline: none;
-  border-bottom: 2px solid #fff;
 }
 
 .prev {
-  background-image: url('../images/projects/prev.svg');
+  background-image: url('../images/projects/left_arrow.png');
 }
 
 .next {
-  background-image: url('../images/projects/next.svg');
+  background-image: url('../images/projects/right_arrow.png');
 }
 
 .project_element-link {
@@ -98,3 +98,5 @@
 .slojno_sosredotochytsya {}
 
 .zakryvaychi_tag {}
+
+.mesto {}

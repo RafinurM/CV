@@ -90,3 +90,15 @@
 .footer_menu-item {
   margin-inline-end: 20px;
 }
+
+
+/* background */
+
+.circle {
+  color: #818d6b;
+  position: absolute;
+  border-radius: 50%;
+  z-index: -20;
+  animation: endEffect 2s linear forwards;
+  outline: 0px;
+}
