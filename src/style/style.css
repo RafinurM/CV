@@ -8,6 +8,7 @@
   background-size: cover;
   background-blend-mode: multiply;
   max-inline-size: 1200px;
+  position: relative;
 }
 
 .header {
@@ -95,10 +96,8 @@
 /* background */
 
 .circle {
-  color: #818d6b;
   position: absolute;
   border-radius: 50%;
-  z-index: -20;
-  animation: endEffect 2s linear forwards;
-  outline: 0px;
+  z-index: -200;
+  transition: transform 15s linear;
 }

@@ -144,6 +144,8 @@
   margin: 10px;
   text-align: right;
   background-color: #4a0303be;
+  position: relative;
+  z-index: 10;
 }
 
 .carrier_list-item {

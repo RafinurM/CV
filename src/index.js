@@ -1,4 +1,11 @@
+import "./style/index.css";
+import { instrumentary } from "./scripts/instrumentsData";
+import { createInstrument } from "./scripts/instruments";
+
+
 const projectList = Array.from(document.querySelectorAll('.project_element-link'));
+const instrumentList = document.querySelector('.card_list');
+
 const buttonNext = document.querySelector('.next');
 const buttonPrev = document.querySelector('.prev');
 const page = document.querySelector('.page')
@@ -11,6 +18,10 @@ function init() {
     addActiveClass(id);
     // setInterval(createRandomCircle, 500);
     setInterval(switchLinkNext, 10000);
+    instrumentary.forEach(instrument => {
+        console.log(instrument)
+        instrumentList.append(createInstrument(instrument))
+    })
 }
 
 function addActiveClass(id) {
@@ -55,18 +66,23 @@ function createRandomCircle() {
     const size = 5;
     const { width, height } = page.getBoundingClientRect();
     const x = getRandomNumber(0, width - size);
-    const y = getRandomNumber(0, height - size);
+    // const y = getRandomNumber(0, height - size);
     circle.classList.add('circle');
     circle.style.width = `${size}px`;
     circle.style.height = `${size}px`;
-    circle.style.top = `${y}px`;
+    circle.style.top = `${0}px`;
     circle.style.left = `${x}px`;
     page.append(circle);
+    console.log(height)
     function setColor() {
-        const color = getRandomColor()
-        circle.style.background = `linear-gradient(90deg, ${color} 0%, ${color} 47%, ${color} 100%)`
+        const color = getRandomColor();
+        circle.style.backgroundColor = `${color}`;
     };
+    function moveCircle() {
+        circle.style.transform = `translateY(${height}px)`;
+    }
     setColor();
+    setTimeout(moveCircle, 1000);
 }
 
 buttonNext.addEventListener('click', () => {
