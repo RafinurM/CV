@@ -6,25 +6,25 @@
 }
 
 .projects_container {
+  position: relative;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
   padding: 10px 0;
   inline-size: 100%;
   block-size: 900px;
-  position: relative;
 }
 
 .project {
-  inline-size: 410px;
-  block-size: 670px;
   margin: 10px 30px;
   overflow: hidden;
+  inline-size: 410px;
+  block-size: 670px;
 }
 
 .projects_description {
-  font-size: 22px;
   color: #fff;
+  font-size: 22px;
 }
 
 .project::-webkit-scrollbar {
@@ -33,22 +33,22 @@
 
 .cles {
   display: flex;
-  justify-content: space-between;
   flex-direction: row;
   flex-wrap: nowrap;
+  justify-content: space-between;
   align-items: center;
 }
 
 .button {
-  inline-size: 50px;
-  block-size: 50px;
   border: 2px solid transparent;
+  color: #fff;
+  font-size: 26px;
   background-color: transparent;
   background-repeat: no-repeat;
   background-size: contain;
-  color: #fff;
   cursor: pointer;
-  font-size: 26px;
+  inline-size: 50px;
+  block-size: 50px;
 }
 
 .button:focus {
@@ -65,15 +65,15 @@
 
 .project_element-link {
   position: absolute;
-  opacity: 0;
-  inline-size: 100%;
-  transition: opacity 0.6s linear;
   z-index: 5;
+  opacity: 0;
+  transition: opacity 0.6s linear;
+  inline-size: 100%;
 }
 
 .project_element-link:focus {
-  outline: none;
   border: 2px solid #fff;
+  outline: none;
 }
 
 .project_element {
@@ -82,21 +82,11 @@
 }
 
 .project_element-link-active {
-  opacity: 1;
   z-index: 10;
+  opacity: 1;
 }
 
-
-/* images */
-
-.naomi {}
-
-.ono_tebe_nado {}
-
-.posmotri_v_okno {}
-
-.slojno_sosredotochytsya {}
-
-.zakryvaychi_tag {}
-
-.mesto {}
+.project_description {
+  font-size: 22px;
+  color: #fff;
+}
