@@ -1,6 +1,6 @@
-/* EXPIRIENCE CARD */
+/* EXPERIENCE CARD */
 
-.expirience {
+.experience {
   border-inline-end: 0;
   border-block-end: 0;
 }
@@ -55,12 +55,16 @@
   outline: none;
 }
 
-.prev {
-  background-image: url('../images/projects/left_arrow.png');
+.secondTriangle {
+  transition: all 0.3s;
 }
 
-.next {
-  background-image: url('../images/projects/right_arrow.png');
+.thirdTriangle {
+  transition: all 0.3s;
+}
+
+.button:hover .secondTriangle{
+  stroke: var(--fColor);
 }
 
 .project_element-link {

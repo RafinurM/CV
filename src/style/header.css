@@ -1,0 +1,49 @@
+/* HEADER */
+
+.header {
+    inline-size: 100%;
+    text-align: center;
+    margin: 20px auto;
+    border: 2px solid var(--accentColor);
+    padding: 10px 100px;
+    color: var(--accentColor);
+    background-color: #141d3bdf;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    /* mix-blend-mode: difference; */
+}
+
+.header:hover {
+    border: 2px solid #fff;
+    background-color: #142459df;
+}
+
+.title {
+    font-size: 32px;
+    animation: colorChange 1s 5s ease-in forwards;
+}
+
+.title_link:focus {
+    outline: none;
+    border-bottom: 2px solid #fff;
+}
+
+.title::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #fff;
+    transform: rotateZ(0deg);
+    transform-origin: 300%;
+    animation: titleAnimation 1.8s 0.3s ease-in forwards,
+        titleEffects 1.9s 1.8s linear, endEffect 2s 4s linear forwards;
+    inline-size: 10px;
+    block-size: 10px;
+    scale: 0.1;
+}
+
+.title_description {
+    font-size: 22px;
+    animation: colorChange 1s 5.2s ease-in forwards;
+}

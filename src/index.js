@@ -9,26 +9,11 @@ const projectsContainer = document.querySelector(".projects_container");
 let projectList = undefined;
 const buttonNext = document.querySelector(".next");
 const buttonPrev = document.querySelector(".prev");
-const page = document.querySelector(".page");
-const colors = [
-  "#000000",
-  "#d4aeae",
-  "#b4b08d",
-  "#67acbd",
-  "#baeffc",
-  "#e5c1f0",
-  "#b1666d",
-  "#757575",
-  "#7f9b91",
-  "#7fcfb3",
-  "#818d6b",
-];
 let id = 0;
 
 init();
 
 function init() {
-//   setInterval(createRandomCircle, 500);
   setInterval(switchLinkNext, 10000);
   instrumentary.forEach((instrument) => {
     instrumentList.append(createInstrument(instrument));
@@ -68,43 +53,19 @@ function clearActiveClass(projectList) {
   });
 }
 
-function getRandomNumber(min, max) {
-  return Math.round(Math.random() * (max - min) + min);
-}
-
-function getRandomColor() {
-  const index = Math.floor(Math.random() * colors.length);
-  return colors[index];
-}
-
-function createRandomCircle() {
-  const circle = document.createElement("div");
-  const size = 5;
-  const { width, height } = page.getBoundingClientRect();
-  const x = getRandomNumber(0, width - size);
-  // const y = getRandomNumber(0, height - size);
-  circle.classList.add("circle");
-  circle.style.width = `${size}px`;
-  circle.style.height = `${size}px`;
-  circle.style.top = `${0}px`;
-  circle.style.left = `${x}px`;
-  page.append(circle);
-  console.log(height);
-  function setColor() {
-    const color = getRandomColor();
-    circle.style.backgroundColor = `${color}`;
-  }
-  function moveCircle() {
-    circle.style.transform = `translateY(${height}px)`;
-  }
-  setColor();
-  setTimeout(moveCircle, 1000);
+function animateArrow(button) {
+  const thirdTriangle = button.querySelector('.thirdTriangle');
+  thirdTriangle.setAttribute('stroke', 'var(--sColor)');
+  setTimeout(() => thirdTriangle.setAttribute('stroke', 'var(--transparent)'), 300)
 }
 
 buttonNext.addEventListener("click", () => {
   switchLinkNext(projectList);
+  animateArrow(buttonNext);
 });
 
 buttonPrev.addEventListener("click", () => {
   switchLinkPrev(projectList);
+  animateArrow(buttonPrev);
+  console.log()
 });

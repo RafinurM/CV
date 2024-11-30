@@ -2,7 +2,86 @@
 @import url('./variables.css');
 @import url('./globals.css');
 @import url('./style.css');
+@import url('./header.css');
 @import url('./cards.css');
 @import url('./instrumentary.css');
-@import url('./expirince.css');
+@import url('./experience.css');
+@import url('./footer.css');
 @import url('./animation.css');
+
+
+@media (max-width: 1024px) {
+    .card_description {
+        font-size: 14px;
+    }
+
+    .hint_item {
+        font-size: 16px;
+    }
+
+    .projects_container {
+        block-size: 600px;
+    }
+
+    .project_element {
+        block-size: 480px;
+    }
+}
+
+/* tablet */
+
+@media (max-width: 768px) {
+    .card_image {
+        inline-size: 100px;
+        block-size: 130px;
+    }
+
+    .card_description {
+        font-size: 12px;
+    }
+
+    .hint_list {
+        margin-inline-start: 10px;
+    }
+
+    .hint_item {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+}
+
+/* mobile */
+
+@media (max-width: 480px) { 
+    .card_content {
+        flex-direction: column;
+    }
+
+    .about {
+        width: 100%;
+    }
+
+    .carrier_list-item {
+        font-size: 12px;
+    }
+
+    .carrier_list-item-description {
+        font-size: 10px;
+    }
+
+    .projects_container {
+        block-size: 400px;
+    }
+
+    .projects_description {
+        font-size: 16px;
+    }
+
+    .project_element {
+        block-size: 320px;
+    }
+
+    .project_description {
+        font-size: 12px;
+    }
+}

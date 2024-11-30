@@ -8,6 +8,7 @@
 .card_list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card_item {
@@ -29,6 +30,7 @@
   inline-size: 48px;
   block-size: 48px;
 }
+
 .card_item-image-description {
   color: #3b76a6;
   font-weight: 700;
@@ -41,8 +43,6 @@
 .card_item:hover {
   border: 2px solid #fff;
   box-shadow: 3px 3px 0px 2px rgba(0, 0, 0, 1);
-  /* -webkit-box-shadow: 3px 3px 0px 2px rgba(0, 0, 0, 1);
-  -moz-box-shadow: 3px 3px 0px 2px rgba(0, 0, 0, 1); */
 }
 
 .card_item:hover>a>figure>.card_item-image-description {

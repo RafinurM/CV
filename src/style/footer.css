@@ -1,0 +1,23 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    inline-size: 100%;
+    block-size: 20vh;
+    border-block-start: 1px solid #ffffff;
+    background-color: var(--backgroundColor);
+}
+
+.address-container {
+    margin: 20px 10px;
+    color: var(--accentColor);
+}
+
+.footer_menu-list {
+    display: flex;
+    color: var(--accentColor);
+}
+
+.footer_menu-item {
+    margin-inline-end: 20px;
+}

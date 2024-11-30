@@ -1,6 +1,9 @@
 :root {
   --accentColor: #44698b; 
-  --alternateColor: rgb(8, 36, 37);
+  --alternateColor: #081125;
   --backgroundColor: rgb(10, 1, 28);
   --accentFont: "Heebo";
+  --transparent: transparent;
+  --fColor: #ff826c;
+  --sColor: #ffe798;
 }
