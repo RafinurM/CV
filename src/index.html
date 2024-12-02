@@ -18,32 +18,34 @@
     <p class="title_description">Frontend developer</p>
   </header>
   <main class="content">
-    <article class="card card_content">
-      <div class="about">
-        <h2 class="card_title">Обо мне</h2>
-        <div class="card_info">
-          
-          <div class="card_description">
-            <img src="<%=require('./images/RM.jpg')%>" alt="Фотография" class="card_image" />
+    <section class="section about">
+      <div class="section_content">
+        <h2 class="section_title">Обо мне</h2>
+        <div class="about_info">
+          <div class="about_description">
+            <img src="<%=require('./images/RM.jpg')%>" alt="Фотография" class="about_image" />
             <p>
               Инженер, художник. Предпочитаю создавать и работать с
               интерфейсами.
             </p>
             <p>
-              В детстве самостоятельно изучал <span class="accent_text">Basic</span>, в школе изучал основы
-              <span class="accent_text">С++</span>, в университете изучал <span class="accent_text">Assembler</span>, <span class="accent_text">Turbo Pascal</span>, различные ПО
-              для программирования микроконтроллеров. Дипломная работа
-              выполнена в системе <span class="accent_text">CODESYS v3</span>.
+              В детстве самостоятельно изучал
+              <span class="accent_text">Basic</span>, в школе изучал основы
+              <span class="accent_text">С++</span>, в университете изучал
+              <span class="accent_text">Assembler</span>,
+              <span class="accent_text">Turbo Pascal</span>, различные ПО для
+              программирования микроконтроллеров. Дипломная работа выполнена в
+              системе <span class="accent_text">CODESYS v3</span>.
             </p>
             <p>
-              Самостоятельно изучаю <span class="accent_text">MySQL</span>, <span class="accent_text">PHP</span>, знаком с компьютерными сетями,
-              протоколами, методами передачи данных.
+              Самостоятельно изучаю <span class="accent_text">MySQL</span>,
+              <span class="accent_text">PHP</span>, знаком с компьютерными
+              сетями, протоколами, методами передачи данных.
             </p>
             <p>
-              Из увлечений - настольные игры, компьютерные игры, пишу масляные
-              и цифровые картины, активный образ жизни. Участвал в крупных
-              международных соревнованиях в качестве технической поддержки IT
-              (волонтёром) на мероприятиях FINA, FIS, SOCHI2014, IJF.
+              Прошёл профессиональную переподготовку на <span class="accent_text">JavaScript</span>-разработчика, <span
+                class="accent_text">React</span>. На данный момент заканчиваю переподготовку на <span
+                class="accent_text">Frontend-разработчика.</span>
             </p>
           </div>
         </div>
@@ -65,18 +67,17 @@
           <span class="hint_item-text">Волонтёр</span>
         </li>
       </ul>
-    </article>
-    <article class="card carrier">
-      <h2 class="card_title">Карьера и обучение</h2>
+    </section>
+    <section class="section carrier">
+      <h2 class="section_title">Карьера и обучение</h2>
       <ul class="carrier_list">
         <li class="carrier_list-item carrier_type-work">
           <h3 class="carrier_list-item-title">
             Schlumberger: Инженер-Электроник
           </h3>
           <span class="carrier_list-item-description">
-            Пришёл в компанию в 2019 году в качестве слесаря КИПиА на локацию
-            Пыть-Ях. Через год сменил локацию на Ванкор, где исполняю
-            обязанности Инженер-Электроника, BSO и CTA instructor.
+            Обслуживание электронных модулей. Внедрение LEAN. Поддерживание
+            KPO. Менторство.
           </span>
         </li>
         <li class="carrier_list-item carrier_type-education">
@@ -104,13 +105,13 @@
           </span>
         </li>
       </ul>
-    </article>
-    <article class="card skills">
-      <h2 class="card_title">Инcтрументарий</h2>
-      <ul class="card_list"></ul>
-    </article>
-    <article class="card experience">
-      <h2 class="card_title">Портфолио</h2>
+    </section>
+    <section class="section instrumentary">
+      <h2 class="section_title">Инcтрументарий</h2>
+      <ul class="instrumentary_list"></ul>
+    </section>
+    <section class="section experience">
+      <h2 class="section_title">Портфолио</h2>
       <span class="projects_description">
         В моём портфолио проектов можно увидеть различные подходы и
         инструменты. Различные проекты демонстрируют различные составляющие -
@@ -133,7 +134,7 @@
         </button>
         <div class="projects_container"></div>
         <button class="button next">
-          <svg xmlns="http://www.w3.org/2000/svg" width='48' hight="47" viewBox="0 0 48 47" fill="none">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" hight="47" viewBox="0 0 48 47" fill="none">
             <g class="arrow_group">
               <path fill="none" d="M-1-1h50v49H-1z" />
               <path class="firstTriangle" fill="none" stroke="#caffc5" stroke-opacity="null" stroke-width="1.5"
@@ -146,12 +147,12 @@
           </svg>
         </button>
       </div>
-    </article>
+    </section>
   </main>
   <footer class="footer">
     <address class="address-container">
       <a href="tel:+79198671711">+7 919 867 17 11</a><br />
-      <a href="mailto:rmursalimov2@slb.com">rmursalimov2@slb.com</a><br />
+      <a href="mailto:i@rmursalimov.ru">i@rmursalimov.ru</a><br />
       <a class="address-text" href="https://github.com/RafinurM" target="_blank">GitHub</a>
     </address>
     <nav>
@@ -166,11 +167,11 @@
     </nav>
   </footer>
   <template id="instrument_template">
-    <li class="card_item">
-      <a href="" class="card_item-link" target="_blank">
+    <li class="instrumentary_item">
+      <a href="" class="instrumentary_item-link" target="_blank">
         <figure>
-          <img src="" alt="" class="card_item-image" />
-          <figcaption class="card_item-image-description"></figcaption>
+          <img src="" alt="" class="instrumentary_item-image" />
+          <figcaption class="instrumentary_item-image-description"></figcaption>
         </figure>
       </a>
     </li>

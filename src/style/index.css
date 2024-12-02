@@ -3,7 +3,9 @@
 @import url('./globals.css');
 @import url('./style.css');
 @import url('./header.css');
-@import url('./cards.css');
+@import url('./section.css');
+@import url('./about.css');
+@import url('./carrier.css');
 @import url('./instrumentary.css');
 @import url('./experience.css');
 @import url('./footer.css');
@@ -52,7 +54,15 @@
 
 /* mobile */
 
-@media (max-width: 480px) { 
+@media (max-width: 480px) {
+    .title {
+        font-size: 22px;
+    }
+
+    .title_description {
+        font-size: 16px;
+    }
+
     .card_content {
         flex-direction: column;
     }

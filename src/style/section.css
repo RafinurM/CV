@@ -1,0 +1,17 @@
+.section {
+    position: relative;
+    z-index: 10;
+    border: 2px solid #000;
+    border-image: var(--mainPurple);
+    border-image-slice: 1;
+    padding: 15px;
+    box-shadow: 5px 5px 0px 3px rgba(0, 0, 0, 1);
+    /* background-color: var(--accentColor); */
+    cursor: pointer;
+    inline-size: 100%;
+}
+
+.section_title {
+    margin-block-end: 10px;
+    color: #fff;
+}

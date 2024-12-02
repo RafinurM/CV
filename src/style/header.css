@@ -4,28 +4,32 @@
     inline-size: 100%;
     text-align: center;
     margin: 20px auto;
-    border: 2px solid var(--accentColor);
+    border: 2px solid #000;
+    border-image: var(--mainPurple);
+    border-image-slice: 1;
     padding: 10px 100px;
-    color: var(--accentColor);
+    color: #fff;
     background-color: #141d3bdf;
-    transition: all 0.3s linear;
+    background-image: linear-gradient(28deg, #000 20%, #e6abfd 50%, #000 72%);
+    background-position: 0 0;
+    background-clip: text;
+    background-origin: padding-box;
+    background-repeat: no-repeat;
+    -webkit-text-fill-color: transparent;
     cursor: pointer;
-    /* mix-blend-mode: difference; */
-}
-
-.header:hover {
-    border: 2px solid #fff;
-    background-color: #142459df;
+    transition: all 1s;
+    animation: titleShining 7s linear infinite;
+    background-size: 150%;
+    mix-blend-mode: difference;
 }
 
 .title {
     font-size: 32px;
-    animation: colorChange 1s 5s ease-in forwards;
 }
 
 .title_link:focus {
     outline: none;
-    border-bottom: 2px solid #fff;
+    border-block-end: 2px solid #e6abfd;
 }
 
 .title::after {
@@ -36,8 +40,6 @@
     background-color: #fff;
     transform: rotateZ(0deg);
     transform-origin: 300%;
-    animation: titleAnimation 1.8s 0.3s ease-in forwards,
-        titleEffects 1.9s 1.8s linear, endEffect 2s 4s linear forwards;
     inline-size: 10px;
     block-size: 10px;
     scale: 0.1;
@@ -45,5 +47,4 @@
 
 .title_description {
     font-size: 22px;
-    animation: colorChange 1s 5.2s ease-in forwards;
 }

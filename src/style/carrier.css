@@ -1,0 +1,55 @@
+/* CARRIER  CARD */
+
+.carrier {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    align-self: flex-end;
+    mix-blend-mode: difference;
+    background-color: #9c8ce446;
+}
+
+.carrier>.card_title {
+    color: #fff;
+    text-align: right;
+}
+
+.carrier_list {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 10px;
+    text-align: right;
+    background-color: #22034a;
+    position: relative;
+    z-index: 10;
+}
+
+.carrier_list-item {
+    padding: 5px;
+    color: #fff;
+    text-align: right;
+    list-style-position: unset;
+    transition: all 0.3s linear;
+}
+
+.carrier_type-education {
+    list-style-image: url('../images/markers/education.png');
+}
+
+.carrier_type-work {
+    list-style-image: url('../images/markers/work.png');
+}
+
+.carrier_type-work::marker {
+    animation: rotate 2s linear infinite alternate;
+}
+
+.carrier_list-item:hover {
+    background-color: rgba(232, 115, 115, 0.52);
+}
+
+.carrier_list-item-description {
+    font-size: 19px;
+    transition: all 0.5s linear;
+}

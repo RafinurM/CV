@@ -1,9 +1,10 @@
 :root {
-  --accentColor: #44698b; 
+  --accentColor: #939ca5;
   --alternateColor: #081125;
   --backgroundColor: rgb(10, 1, 28);
   --accentFont: "Heebo";
   --transparent: transparent;
   --fColor: #ff826c;
   --sColor: #ffe798;
+  --mainPurple: linear-gradient(28deg, #000 0%, #6500ac 50%, #000 100%);
 }

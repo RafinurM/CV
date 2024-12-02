@@ -4,7 +4,7 @@ import { createInstrument } from "./scripts/instruments";
 import { projects } from "./scripts/projectsData";
 import { createProject } from "./scripts/projects";
 
-const instrumentList = document.querySelector(".card_list");
+const instrumentList = document.querySelector(".instrumentary_list");
 const projectsContainer = document.querySelector(".projects_container");
 let projectList = undefined;
 const buttonNext = document.querySelector(".next");

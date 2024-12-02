@@ -63,7 +63,7 @@
   transition: all 0.3s;
 }
 
-.button:hover .secondTriangle{
+.button:hover .secondTriangle {
   stroke: var(--fColor);
 }
 
