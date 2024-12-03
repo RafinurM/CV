@@ -7,6 +7,9 @@
     align-self: flex-end;
     mix-blend-mode: difference;
     background-color: #9c8ce446;
+    transition: all 0.3s;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .carrier>.card_title {

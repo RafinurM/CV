@@ -9,12 +9,16 @@ const projectsContainer = document.querySelector(".projects_container");
 let projectList = undefined;
 const buttonNext = document.querySelector(".next");
 const buttonPrev = document.querySelector(".prev");
+const loader = document.querySelector('.loaderArea');
 let id = 0;
 
-init();
+window.addEventListener('load', () => {
+  loader.classList.add('visually-hidden'); // remove loader
+  init();
+})
 
 function init() {
-  setInterval(switchLinkNext, 10000);
+  loadHeader();
   instrumentary.forEach((instrument) => {
     instrumentList.append(createInstrument(instrument));
   });
@@ -22,7 +26,13 @@ function init() {
     projectsContainer.append(createProject(project));
   });
   projectList = Array.from(document.querySelectorAll(".project_element-link"));
+  setInterval(switchLinkNext, 10000);
   addActiveClass(id);
+}
+
+function loadHeader() {
+  const header = document.querySelector('.header');
+  header.style.opacity = 1;
 }
 
 function addActiveClass(id) {

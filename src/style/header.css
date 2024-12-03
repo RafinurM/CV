@@ -9,7 +9,7 @@
     border-image-slice: 1;
     padding: 10px 100px;
     color: #fff;
-    background-color: #141d3bdf;
+    background-color: #3825a5ab;
     background-image: linear-gradient(28deg, #000 20%, #e6abfd 50%, #000 72%);
     background-position: 0 0;
     background-clip: text;
@@ -18,13 +18,29 @@
     -webkit-text-fill-color: transparent;
     cursor: pointer;
     transition: all 1s;
-    animation: titleShining 7s linear infinite;
-    background-size: 150%;
-    mix-blend-mode: difference;
+    animation: titleShining 7s linear infinite forwards;
+    transition: opacity 1s cubic-bezier(0.42, 0, 1, -0.04);;
+    opacity: 0;
+    position: relative;
+}
+
+.header:before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(-15deg, #3f0b64 0%, #7705c9 120% );
+    filter: blur(50px);
+    transition: opacity 0.3s;
+    border-radius: inherit;
 }
 
 .title {
-    font-size: 32px;
+    font-size: clamp(1.375rem, 1.1477rem + 1.1364vw, 2rem);
+    color: #fff;
 }
 
 .title_link:focus {

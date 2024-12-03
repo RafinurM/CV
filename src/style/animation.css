@@ -2,24 +2,14 @@
 
 @keyframes titleShining {
   from {
-    background-position: 0 0;
+    background-position: 50%;
   }
 
   50% {
-    background-position: 100% 0;
+    background-position: 130%;
   }
 
   to {
-    background-position: 0 0;
-  }
-}
-
-@keyframes rotate {
-  from {
-    transform: rotateZ(0deg);
-  }
-
-  to {
-    transform: rotateZ(-50deg);
+    background-position: 50%;
   }
 }

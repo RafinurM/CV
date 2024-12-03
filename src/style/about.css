@@ -3,11 +3,25 @@
 .about {
     display: flex;
     padding: 15px;
+    transition: all 0.3s;
+    opacity: 0;  /* hidden for JS */
+    visibility: hidden;
 }
 
 .about_info {
     display: flex;
     padding: 15px;
+}
+
+.about_description {
+    margin: 0 0 0 10px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+.about_text {
+    text-align: justify;
 }
 
 .section_content {
@@ -24,11 +38,12 @@
     border: 2px solid #fff;
 }
 
-.about_description {
-    margin: 0 0 0 10px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.3;
+.section_content:hover>.section_title {
+    color: var(--alternateColor);
+}
+
+.section_content:hover:is(.accent_text){
+    color: var(--alternateColor);
 }
 
 .about_image {
@@ -52,14 +67,14 @@
     margin-block-start: 10px;
     border: 2px solid transparent;
     padding: 10px 20px;
-    color: #fff;
+    color: #ffffff;
     font-weight: 900;
-    font-size: 26px;
+    font-size: clamp(1.375rem, 1.2841rem + 0.4545vw, 1.625rem);
     text-align: center;
     background-color: var(--accentColor);
     background-repeat: no-repeat;
     background-position: center, center;
-    background-size: 120%;
+    background-size: 105%;
     transition: all 0.3s linear;
 }
 
@@ -76,7 +91,7 @@
     z-index: 10;
     inline-size: 100%;
     block-size: 100%;
-    background-color: #0000007d;
+    background-color: #1d093860;
 }
 
 .hint_item:hover {
@@ -87,21 +102,21 @@
 /* images for hints */
 
 .education {
-    background-image: url('https://plus.unsplash.com/premium_photo-1661963874418-df1110ee39c1?q=80&w=1386&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-image: url('../images/about/1.jpg');
 }
 
 .english {
-    background-image: url('https://plus.unsplash.com/premium_photo-1668447247133-e5b6354a7763?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-image: url('../images/about/2.jpg');
 }
 
 .art {
-    background-image: url('../images/background.jpeg');
+    background-image: url('../images/about/3.jpg');
 }
 
 .chess {
-    background-image: url('https://plus.unsplash.com/premium_photo-1675762226695-bec5748d4d00?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-image: url('../images/about/4.jpg');
 }
 
 .volunteer {
-    background-image: url('https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-image: url('../images/about/5.jpg');
 }

@@ -11,6 +11,16 @@
 </head>
 
 <body class="page">
+  <div class="loaderArea">
+    
+    <div class="loader">
+      <span class="loading_text">Загрузка</span>
+      <div class="loader_block first"></div>
+      <div class="loader_block second"></div>
+      <div class="loader_block fourth"></div>
+      <div class="loader_block third"></div>
+    </div>
+ </div>
   <header class="header" id="header">
     <h1 class="title">
       <a href="/" class="title_link">Rafinur Mursalimov</a>
@@ -23,30 +33,32 @@
         <h2 class="section_title">Обо мне</h2>
         <div class="about_info">
           <div class="about_description">
-            <img src="<%=require('./images/RM.jpg')%>" alt="Фотография" class="about_image" />
-            <p>
-              Инженер, художник. Предпочитаю создавать и работать с
-              интерфейсами.
-            </p>
-            <p>
-              В детстве самостоятельно изучал
-              <span class="accent_text">Basic</span>, в школе изучал основы
-              <span class="accent_text">С++</span>, в университете изучал
-              <span class="accent_text">Assembler</span>,
-              <span class="accent_text">Turbo Pascal</span>, различные ПО для
-              программирования микроконтроллеров. Дипломная работа выполнена в
-              системе <span class="accent_text">CODESYS v3</span>.
-            </p>
-            <p>
-              Самостоятельно изучаю <span class="accent_text">MySQL</span>,
-              <span class="accent_text">PHP</span>, знаком с компьютерными
-              сетями, протоколами, методами передачи данных.
-            </p>
-            <p>
-              Прошёл профессиональную переподготовку на <span class="accent_text">JavaScript</span>-разработчика, <span
-                class="accent_text">React</span>. На данный момент заканчиваю переподготовку на <span
-                class="accent_text">Frontend-разработчика.</span>
-            </p>
+            <img src="<%=require('./images/avatar.jpg')%>" alt="Фотография" class="about_image" />
+            <span class="about_text">
+              <p>
+                Инженер, художник. Предпочитаю создавать и работать с
+                интерфейсами.
+              </p>
+              <p>
+                В детстве самостоятельно изучал
+                <span class="accent_text">Basic</span>, в школе изучал основы
+                <span class="accent_text">С++</span>, в университете изучал
+                <span class="accent_text">Assembler</span>,
+                <span class="accent_text">Turbo Pascal</span>, различные ПО для
+                программирования микроконтроллеров. Дипломная работа выполнена в
+                системе <span class="accent_text">CODESYS v3</span>.
+              </p>
+              <p>
+                Самостоятельно изучаю <span class="accent_text">MySQL</span>,
+                <span class="accent_text">PHP</span>, знаком с компьютерными
+                сетями, протоколами, методами передачи данных.
+              </p>
+              <p>
+                Прошёл профессиональную переподготовку на <span class="accent_text">JavaScript</span>-разработчика, <span
+                  class="accent_text">React</span>. На данный момент заканчиваю переподготовку на <span
+                  class="accent_text">Frontend-разработчика.</span>
+              </p>
+            </span>
           </div>
         </div>
       </div>
@@ -117,7 +129,7 @@
         инструменты. Различные проекты демонстрируют различные составляющие -
         это визуальная часть, адаптивность и работоспособность.
       </span>
-      <div class="cles">
+      <div class="slide">
         <button class="button prev">
           <svg xmlns="http://www.w3.org/2000/svg" width="48" height="47" viewBox="0 0 48 47" fill="none">
             <g class="arrow_group">
@@ -178,7 +190,7 @@
   </template>
   <template id="project_template">
     <a href="" class="project_element-link" target="_blank">
-      <img src="" alt="" class="project_element" />
+      <img src="" alt="" class="project_element" loading="lazy" />
       <span class="project_description"></span>
     </a>
   </template>

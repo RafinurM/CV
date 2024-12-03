@@ -1,0 +1,98 @@
+
+@media (max-width: 1024px) {
+    .about_description {
+        font-size: 14px;
+    }
+
+    .hint_item {
+        font-size: 16px;
+    }
+
+    .project_element {
+        min-block-size: 480px;
+    }
+}
+
+/* tablet */
+
+@media (max-width: 768px) {
+    .about_image {
+        max-inline-size: 100px;
+        max-block-size: 130px;
+    }
+
+    .about_description {
+        font-size: 12px;
+    }
+
+    .hint_list {
+        margin-inline-start: 10px;
+    }
+
+    .hint_item {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .projects_container {
+        max-block-size: 700px;
+    }
+}
+
+/* mobile */
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 22px;
+    }
+
+    .title_description {
+        font-size: 16px;
+    }
+
+    .section_content {
+        inline-size: 100%;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .hint_item {
+        min-block-size: 50px;
+    }
+
+    .carrier_list-item {
+        font-size: 12px;
+    }
+
+    .carrier_list-item-description {
+        font-size: 10px;
+    }
+
+    .projects_container {
+        max-block-size: 400px;
+    }
+
+    .projects_description {
+        font-size: 16px;
+    }
+
+    .project_element {
+        min-block-size: 320px;
+    }
+
+    .project_description {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 320px) {
+    .projects_container {
+        max-block-size: 300px;
+    }
+
+    .project_element {
+        min-block-size: 220px;
+    }
+}

@@ -3,6 +3,9 @@
 .instrumentary {
   justify-self: flex-end;
   background-color: #3b76a654;
+  transition: all 0.3s;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .instrumentary_list {
@@ -43,7 +46,7 @@
 .instrumentary_item:hover {
   border-block-start: 1px solid #6500ac;
   border-inline-start: 1px solid #6500ac;
-  box-shadow: 3px 3px 0px 2px rgba(0, 0, 0, 1);
+  box-shadow: 3px 3px 0px 2px #000;
 }
 
 .instrumentary_item:hover>a>figure>.instrumentary_item-image-description {

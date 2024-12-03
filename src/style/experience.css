@@ -1,48 +1,44 @@
 /* EXPERIENCE CARD */
 
 .experience {
-  border-inline-end: 0;
-  border-block-end: 0;
+  background-color: #91e69f10;
+  transition: all 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+.slide {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-block-start: 10px;
 }
 
 .projects_container {
   position: relative;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  padding: 10px 0;
+  display: block;
   inline-size: 100%;
-  block-size: 900px;
-}
-
-.project {
-  margin: 10px 30px;
-  overflow: hidden;
-  inline-size: 410px;
-  block-size: 670px;
+  block-size: 900px
 }
 
 .projects_description {
   color: #fff;
   font-size: 22px;
+  margin-block-end: 10px;
 }
 
 .project::-webkit-scrollbar {
   inline-size: 0;
 }
 
-.cles {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
-}
 
 .button {
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   color: #fff;
-  font-size: 26px;
   background-color: transparent;
   background-repeat: no-repeat;
   background-size: contain;
@@ -73,6 +69,10 @@
   opacity: 0;
   transition: opacity 0.6s linear;
   inline-size: 100%;
+  block-size: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .project_element-link:focus {
@@ -82,7 +82,7 @@
 
 .project_element {
   inline-size: 100%;
-  block-size: 760px;
+  max-block-size: 760px;
 }
 
 .project_element-link-active {
@@ -93,4 +93,5 @@
 .project_description {
   font-size: 22px;
   color: #fff;
+  margin-block-start: 20px;
 }
