@@ -19,8 +19,7 @@
     cursor: pointer;
     transition: all 1s;
     animation: titleShining 7s linear infinite forwards;
-    transition: opacity 1s cubic-bezier(0.42, 0, 1, -0.04);;
-    opacity: 0;
+    transition: opacity 1s cubic-bezier(0.42, 0, 1, -0.04);
     position: relative;
 }
 
@@ -32,10 +31,11 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background: linear-gradient(-15deg, #3f0b64 0%, #7705c9 120% );
+    background: linear-gradient(-15deg, #3f0b64 0%, #7705c9 120%);
     filter: blur(50px);
     transition: opacity 0.3s;
     border-radius: inherit;
+    animation: visualShining 1.3s linear forwards;
 }
 
 .title {

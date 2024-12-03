@@ -1,0 +1,42 @@
+.header::after {
+    content: '';
+    inline-size: 2px;
+    block-size: 0px;
+    border-inline-start: 2px solid #770699;
+    position: absolute;
+    top: 100%;
+    animation: lineGrow 0.5s 1.6s linear forwards;
+}
+
+.about::after {
+    content: '';
+    inline-size: 2px;
+    block-size: 0px;
+    border-inline-start: 2px solid #770699;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    animation: lineGrowSection 0.5s 2.7s linear forwards;
+}
+
+.carrier::after {
+    content: '';
+    inline-size: 2px;
+    block-size: 0px;
+    border-inline-start: 2px solid #770699;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    animation: lineGrowSection 0.5s 3.7s linear forwards;
+}
+
+.instrumentary::after {
+    content: '';
+    inline-size: 2px;
+    block-size: 0px;
+    border-inline-start: 2px solid #770699;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    animation: lineGrowSection 0.5s 4.7s linear forwards;
+}

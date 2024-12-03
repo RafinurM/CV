@@ -6,10 +6,14 @@ import { createProject } from "./scripts/projects";
 
 const instrumentList = document.querySelector(".instrumentary_list");
 const projectsContainer = document.querySelector(".projects_container");
-let projectList = undefined;
 const buttonNext = document.querySelector(".next");
 const buttonPrev = document.querySelector(".prev");
 const loader = document.querySelector('.loaderArea');
+const aboutSection = document.querySelector('.about');
+const carrierSection = document.querySelector('.carrier');
+const skillsSection = document.querySelector('.instrumentary');
+const experienceSection = document.querySelector('.experience');
+let projectList = undefined;
 let id = 0;
 
 window.addEventListener('load', () => {
@@ -19,6 +23,10 @@ window.addEventListener('load', () => {
 
 function init() {
   loadHeader();
+  setTimeout(() => loadSection(aboutSection), 2200);
+  setTimeout(() => loadSection(carrierSection), 2700);
+  setTimeout(() => loadSection(skillsSection), 3200);
+  setTimeout(() => loadSection(experienceSection), 4500);
   instrumentary.forEach((instrument) => {
     instrumentList.append(createInstrument(instrument));
   });
@@ -32,7 +40,11 @@ function init() {
 
 function loadHeader() {
   const header = document.querySelector('.header');
-  header.style.opacity = 1;
+  header.classList.remove('hidden');
+}
+
+function loadSection(section) {
+  section.classList.remove('hidden')
 }
 
 function addActiveClass(id) {

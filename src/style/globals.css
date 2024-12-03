@@ -53,4 +53,5 @@ ol {
   block-size: 1px;
   clip-path: inset(50%);
   white-space: nowrap;
+  opacity: 0;
 }

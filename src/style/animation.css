@@ -13,3 +13,36 @@
     background-position: 50%;
   }
 }
+
+@keyframes visualShining {
+  from {
+    opacity: 0;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0.4;
+  }
+  
+}
+
+@keyframes lineGrow {
+  from {
+    block-size: 0px;
+  }
+  to {
+    block-size: 42px;
+  }
+}
+
+@keyframes lineGrowSection {
+  from {
+    block-size: 0px;
+  }
+  to {
+    block-size: 52px;
+  }
+}

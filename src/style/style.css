@@ -23,3 +23,7 @@
 .accent_text {
   color: #fff;
 }
+
+.hidden {
+  opacity: 0;
+}

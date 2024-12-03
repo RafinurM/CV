@@ -3,8 +3,6 @@
 .experience {
   background-color: #91e69f10;
   transition: all 0.3s;
-  opacity: 0;
-  visibility: hidden;
 }
 
 
@@ -76,7 +74,7 @@
 }
 
 .project_element-link:focus {
-  border: 2px solid #fff;
+  border: 2px solid #770699;
   outline: none;
 }
 

@@ -4,8 +4,6 @@
     display: flex;
     padding: 15px;
     transition: all 0.3s;
-    opacity: 0;  /* hidden for JS */
-    visibility: hidden;
 }
 
 .about_info {
