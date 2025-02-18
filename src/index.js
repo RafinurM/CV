@@ -89,5 +89,4 @@ buttonNext.addEventListener("click", () => {
 buttonPrev.addEventListener("click", () => {
   switchLinkPrev(projectList);
   animateArrow(buttonPrev);
-  console.log()
 });
